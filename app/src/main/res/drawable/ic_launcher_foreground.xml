@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A digital watch with a notification dot -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- strap -->
+    <path
+        android:fillColor="#2B2B2B"
+        android:pathData="M42,16h24v76h-24z" />
+    <!-- case -->
+    <path
+        android:fillColor="#3C3C3C"
+        android:pathData="M38,34h32a8,8 0 0 1 8,8v24a8,8 0 0 1 -8,8h-32a8,8 0 0 1 -8,-8v-24a8,8 0 0 1 8,-8z" />
+    <!-- display -->
+    <path
+        android:fillColor="#C8D2B4"
+        android:pathData="M37,43h34v22h-34z" />
+    <!-- digits -->
+    <path
+        android:fillColor="#2B2B2B"
+        android:pathData="M41,52h4v8h-4z M48,52h4v8h-4z M56,52h4v8h-4z M63,52h4v8h-4z M41,46h5v3h-5z" />
+    <!-- notification dot -->
+    <path
+        android:fillColor="#FF5A36"
+        android:pathData="M64,38a8,8 0 1 0 16,0a8,8 0 1 0 -16,0z" />
+</vector>

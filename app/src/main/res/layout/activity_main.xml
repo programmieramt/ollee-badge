@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            tools:text="0"
+            android:textSize="72sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/count_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textIsSelectable="true" />
+
+        <Button
+            android:id="@+id/grant_listener"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/grant_listener" />
+
+        <Button
+            android:id="@+id/grant_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/grant_bluetooth" />
+
+        <Button
+            android:id="@+id/choose_watch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_watch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/section_settings"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Switch
+            android:id="@+id/enabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/setting_enabled" />
+
+        <Switch
+            android:id="@+id/count_apps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/setting_count_apps" />
+
+        <Switch
+            android:id="@+id/include_silent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/setting_include_silent" />
+
+        <Button
+            android:id="@+id/exclude_apps"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exclude_apps" />
+
+        <Button
+            android:id="@+id/markers"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/markers_button" />
+
+        <TextView
+            android:id="@+id/markers_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:alpha="0.75" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/section_tools"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test" />
+
+        <Button
+            android:id="@+id/sync_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sync_now" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:alpha="0.75"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/hint" />
+    </LinearLayout>
+</ScrollView>

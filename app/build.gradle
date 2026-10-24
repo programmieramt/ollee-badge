@@ -1,0 +1,40 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.programmieramt.olleebadge'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.programmieramt.olleebadge'
+        minSdk 31
+        targetSdk 36
+        versionCode 1
+        versionName '1.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // Signed with the local debug key so it can be sideloaded; use your own key to distribute.
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    applicationVariants.configureEach { variant ->
+        variant.outputs.each { output ->
+            output.outputFileName = "ollee-badge-${variant.buildType.name}-${variant.versionName}.apk"
+        }
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+}

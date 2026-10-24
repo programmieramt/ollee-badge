@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!-- Only adb (shell) and the system hold DUMP, so no app can trigger this. -->
+        <receiver
+            android:name=".DebugReceiver"
+            android:exported="true"
+            android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="com.programmieramt.olleebadge.debug.PLAY_CHIME" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

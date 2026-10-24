@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ollee Badge</string>
+    <string name="default_watch_name">Ollee Watch</string>
+
+    <plurals name="count_notifications">
+        <item quantity="one">Benachrichtigung</item>
+        <item quantity="other">Benachrichtigungen</item>
+    </plurals>
+    <plurals name="count_apps">
+        <item quantity="one">App mit Benachrichtigungen</item>
+        <item quantity="other">Apps mit Benachrichtigungen</item>
+    </plurals>
+
+    <string name="status_listener_ok">Benachrichtigungszugriff: erteilt</string>
+    <string name="status_listener_missing">Benachrichtigungszugriff: fehlt</string>
+    <string name="status_watch">Uhr: %1$s (%2$s)</string>
+    <string name="status_watch_none">Uhr: noch keine ausgewählt</string>
+    <string name="status_shown">Auf der Uhr: %1$s (übertragen um %2$s)</string>
+    <string name="status_error">Hinweis: %1$s</string>
+    <string name="shown_weekday">Wochentag</string>
+
+    <string name="link_service_stopped">Verbindung: Dienst läuft nicht</string>
+    <string name="link_no_watch">Verbindung: –</string>
+    <string name="link_disabled">Verbindung: ausgeschaltet</string>
+    <string name="link_no_permission">Verbindung: Bluetooth-Berechtigung fehlt</string>
+    <string name="link_bluetooth_off">Verbindung: Bluetooth ist aus</string>
+    <string name="link_idle">Verbindung: bereit (verbindet sich nur kurz zum Übertragen)</string>
+    <string name="link_syncing">Verbindung: überträgt …</string>
+    <string name="link_busy">Verbindung: wartet kurz, die Ollee-App ist mit der Uhr verbunden</string>
+    <string name="link_unreachable">Verbindung: Uhr nicht erreichbar, nächster Versuch um %1$s</string>
+    <string name="link_unreachable_plain">Verbindung: Uhr nicht erreichbar</string>
+
+    <string name="error_no_service">Das Gerät hat keinen Ollee-Dienst. Richtige Uhr ausgewählt?</string>
+    <string name="error_no_reply">Die Uhr hat nicht geantwortet.</string>
+
+    <string name="grant_listener">Benachrichtigungszugriff erteilen</string>
+    <string name="grant_bluetooth">Bluetooth-Berechtigung erteilen</string>
+    <string name="choose_watch">Uhr suchen</string>
+    <string name="bluetooth_denied">Ohne Bluetooth-Berechtigung kann die App die Uhr nicht erreichen. Du kannst sie in den App-Einstellungen erteilen.</string>
+    <string name="no_bluetooth">Dieses Gerät hat kein Bluetooth.</string>
+
+    <string name="section_settings">Einstellungen</string>
+    <string name="setting_enabled">Anzahl auf der Uhr anzeigen</string>
+    <string name="setting_count_apps">Jede App nur einmal zählen</string>
+    <string name="setting_include_silent">Stumme Benachrichtigungen mitzählen</string>
+    <string name="exclude_apps">Apps ausschließen …</string>
+    <string name="exclude_title">Nicht mitzählen</string>
+    <string name="exclude_empty">Bisher hat noch keine App eine Benachrichtigung geschickt. Sobald das passiert, erscheint sie hier.</string>
+    <string name="done">Fertig</string>
+    <string name="markers_button">Markierungen für Beeper-Chats …</string>
+    <string name="markers_title">Markierungen für Beeper-Chats</string>
+    <string name="markers_message">Eine Zeile pro Chat: Name = zwei Zeichen. Hat einer dieser Chats eine Benachrichtigung, zeigt die Uhr seine Zeichen statt der Anzahl. Bei mehreren gewinnt die neueste.</string>
+    <string name="markers_hint">Alex = A-\nSam = S-\nFamilie = F-</string>
+    <string name="markers_none">Keine Markierungen</string>
+    <string name="save">Speichern</string>
+
+    <string name="section_tools">Werkzeuge</string>
+    <string name="test">Test: „8“ für 10 Sekunden anzeigen</string>
+    <string name="test_running">Sobald die Uhr erreichbar ist, zeigt sie 10 Sekunden lang „%1$d“.</string>
+    <string name="test_no_listener">Der Dienst läuft nicht. Ist der Benachrichtigungszugriff erteilt?</string>
+    <string name="sync_now">Jetzt übertragen</string>
+
+    <string name="picker_title">Ollee Watch auswählen</string>
+    <string name="picker_hint">Schalte Bluetooth an der Uhr ein. Gefundene Uhren erscheinen hier.</string>
+    <string name="picker_nothing_found">Keine Uhr gefunden. Ist Bluetooth an der Uhr eingeschaltet?</string>
+    <string name="picker_failed">Die Suche ist fehlgeschlagen (Fehler %1$d).</string>
+
+    <string name="hint">So funktioniert es: Die Uhr zeigt die Anzahl oben links anstelle des Wochentags, also 1–9, 10 oder 11 (für 11 und mehr). Ohne Benachrichtigungen erscheint wieder der Wochentag.\n\nNicht mitgezählt werden Medien (Musik, Podcasts, Videos, auch pausiert), Dauerbenachrichtigungen (Hintergrunddienste, Navigation, Downloads, Stoppuhr, Standortfreigabe, Systemstatus) und stumme Benachrichtigungen.\n\nDie App verbindet sich nur für ein paar Sekunden mit der Uhr, wenn sich die Anzahl ändert. Verbindet sich gerade die Ollee-App mit der Uhr, wartet sie bis zu einer Minute. Damit sich die Anzeige laufend aktualisiert, muss Bluetooth an der Uhr dauerhaft eingeschaltet sein (in der Ollee-App „Bluetooth always on“).</string>
+</resources>
